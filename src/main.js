@@ -11,17 +11,17 @@ const forecastUrl = 'https://api.apixu.com/v1/forecast.json?key=';
 
 
 
-// AJAX functions
-// export async function getVenues(){
-//
-//   const urlToFetch = url + App.city + '&venuePhotos=1&limit=10&client_id=' + clientId + '&client_secret=' + clientSecret + '&v=20171207';
-//   try{
-//     let response = await fetch(urlToFetch);
-//       if(response.ok){
-//         console.log(response);
-//       }
-//   }catch(error) {
-// 	  console.log(error);
-// 	}
-//
-// }
+//AJAX functions
+export async function getVenues(){
+
+  const urlToFetch = url + App.city + '&venuePhotos=1&limit=10&client_id=' + clientId + '&client_secret=' + clientSecret + '&v=20171207';
+  try{
+    let response = await fetch(urlToFetch);
+      if(response.ok){
+        console.log(response);
+      }
+  }catch(error) {
+	  console.log(error);
+	}
+
+}

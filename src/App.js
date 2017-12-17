@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import {getVenues} from './main.js';
 import './App.css';
-require('jquery');
+import $ from 'jquery';
 
+// // Page Elements
+const $input = $('#city');
+const $submit = $('#button'); alert($submit);
+const $destination = $('#destination');
+const $container = $('.container');
+const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
+const $weatherDivs = [$("#weather1"), $("#weather2"), $("#weather3"), $("#weather4")];
+const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const city = $input.val();
 
 class App extends Component {
-
 
   render() {
     return (
@@ -64,18 +72,10 @@ class App extends Component {
         </div>
       </div>
     );
-    
+
   }
 }
 
-// // Page Elements
-// const $input = $('#city');
-// const $submit = $('#button');
-// const $destination = $('#destination');
-// const $container = $('.container');
-// const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
-// const $weatherDivs = [$("#weather1"), $("#weather2"), $("#weather3"), $("#weather4")];
-// const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-//   const city = $input.val();
+
 
 export default App;
